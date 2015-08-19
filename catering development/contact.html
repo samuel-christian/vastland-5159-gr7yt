@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-home.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        var options = {
+            ..
+        };
+            
+        $("#slider1_container").css("display", "block");
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        ...
+    });
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(-6.9058469,107.5968603),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(-6.9058469,107.5968603),
+			map: map,
+			title: 'Hello World!'
+		  })
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	
+	<style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+					<img class="logo" src="images/logo.jpg" width="200px">
+				</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+				
+				<ul class="nav navbar-nav" id="login">
+					<li>
+                        <a href="daftar.html">Daftar</a>
+                    </li>
+                    <li>
+                        <a href="masuk.html">Masuk</a>
+                    </li>
+				</ul>
+            </div>
+			
+			
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+	<div class="content" >
+    <div class="container" >
+
+        <div class="row">
+		
+			
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+
+                <!-- Welcome -->
+				<img class="img-responsive" src="images/Desert.jpg" alt="">
+                <h2>
+                    Hubungi Kami
+                </h2>
+                <ul>
+					<li> Jalan Pasirkaliki 21</li>
+					<li> 08112491355</li>
+					<li> bikinkenyang@gmail.com</li>
+					<li> facebook.com/bikinkenyang</li>
+				</ul>
+				<div id="map"></div>
+                <hr>
+                <p>Anda telah menemukan katering yang akan memuaskan rasa lapar anda!  Website ini didesain khusus untuk orang-orang yang membutuhkan jasa katering untuk acara special mereka.  Disini kami menampilkan paket-paket dari penyedia katering ternama beserta paket-paket yang mereka tawarkan, sehingga anda dapat memilih katering terbaik untuk acara anda. Katering lengkap dan mudah, ya dapat dicari di Bikin Kenyang.</p>
+                
+
+                <hr>
+
+              
+
+                <hr>
+       
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+             
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>More</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Join us</a>
+                                </li>
+                                <li><a href="#">How to Order ?</a>
+                                </li>
+                           
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h3>Find us on</h3>
+					<a href="http://pinterest.com/bikinkeyang/" target="_blank"><img src="images/pinterest.png" border="0" title="Pinterest" alt="Pinterest Icon"/></a>
+<a href="http://twitter.com/#!/bikinkenyang" target="_blank"><img src="images/twitter.png" border="0" title="Twitter" alt="Twitter Icon" /></a>
+<a href="http://www.facebook.com/pages/bikinkeyang" target="_blank"><img src="images/facebook.png" border="0" title="Facebook" alt="Facebook Icon" /></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+		
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; SamChristProjects</p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+	</div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
