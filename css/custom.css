@@ -1,0 +1,32 @@
+/**Samuel Christian**/
+/**20 August 2015**/
+.navbar-header {
+	height: 80px !important;
+}
+
+img.logo {
+	width: 200px;
+	height: 75px;
+	margin-top: -15px;
+	/*border: 1px solid black;*/
+}
+
+.navbar-nav > li > a {
+	margin-top: -10px;
+	padding-bottom: 25px;
+}
+
+.signin-form {
+	width: 250px;
+	left: auto;
+	right: 0;
+}
+
+.signin-form > form {
+	display: block;
+	padding: 10px 20px;
+}
+
+.btn-accounts {
+	width: 100%;
+}
