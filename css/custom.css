@@ -1,32 +1,155 @@
 /**Samuel Christian**/
 /**20 August 2015**/
-.navbar-header {
-	height: 80px !important;
+body { overflow-x: hidden; }
+.header {
+	padding-top: 10px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #c7c7c7;
 }
 
-img.logo {
-	width: 200px;
-	height: 75px;
-	margin-top: -15px;
-	/*border: 1px solid black;*/
+/*.header-container {
+	background: #f8f8f8;
+	border: 1px solid #e7e7e7;
+	border-radius: 2px;
+}*/
+
+.mycarousel {
+	width: 75%;
+	max-height: 400px !important;
+	margin: 20px auto;
+}
+.carousel-inner > .item > img {
+	width: 100%;
+	max-height: 400px !important;
 }
 
-.navbar-nav > li > a {
-	margin-top: -10px;
-	padding-bottom: 25px;
+.logo-text {
+	width: 60%;
+	height: 60%;
 }
+.logo-area { line-height: 50px; }
+
+.nav-area { padding-left: 5%; }
+
+.nav-item {
+	line-height: 45px;
+	border-left: 1px solid #d7d7d7;
+	height: 100%;
+}
+.last-nav-item { border-right: 1px solid #d7d7d7; }
+.nav-item:hover {
+	background: #d7d7d7;
+	transition: background-color 0.5s ease;
+	cursor: pointer;
+}
+.nav-item > a {
+	text-decoration: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.login-area {
+	margin-left: 40px;
+	text-align: center;
+}
+.login-item {
+	line-height: 45px;
+	border-left: 1px solid #d7d7d7;
+	height: 100%;
+}
+.login-item > a {
+	text-decoration: none;
+	color: #000;
+	vertical-align: middle;
+}
+.last-login-item { border-right: 1px solid #d7d7d7; }
+
+.dropdown-link { color: #000; text-decoration: none; }
+.dropdown-link:visited { color: #000; text-decoration: none; }
+.dropdown-link:active { color: #000; text-decoration: none; }
+.dropdown-link:hover { color: #000; text-decoration: none; }
+.dropdown-link:focus { color: #000; text-decoration: none; }
 
 .signin-form {
 	width: 250px;
 	left: auto;
 	right: 0;
 }
-
 .signin-form > form {
 	display: block;
 	padding: 10px 20px;
 }
+.signin-form > form > div > a { color: #fff; }
+.btn-accounts { width: 100%; }
 
-.btn-accounts {
+.fav-item-container {
+	width: 90%;
+	margin: 0px auto;
+}
+.line-through {
+	border-top: 1px solid #ccc;
+	margin: 20px 0px;
+	position: relative;
+}
+.line-through p {
+	border-top: 1px solid #ddd;
+	top: -13px;
+	position: absolute;
+	text-align: center;
 	width: 100%;
+	border: none;
+}
+.fav-item-title {
+	background: #fff;
+	font-weight: bold;
+	padding: 0px 10px;
+	font-size: 14px;
+	color: #606060;
+}
+
+.register-form-wrapper {
+	border: 1px solid #d7d7d7;
+	width: 700px;
+	margin: 20px auto;
+	border-radius: 2px;
+}
+.register-form {
+	padding: 10px 20px;
+}
+.register-form > .form-group > label { text-align: left; }
+.register-intro > p {
+	color: #909090;
+}
+.form-actions {
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 0px;
+}
+.form-actions > button { width: 70%; }
+
+.footer { 
+	border: 1px solid #c7c7c7;
+	background: #e7e7e7;
+	border-radius: 2px;
+}
+.footer-logo { line-height: 100px; }
+.footer-logo > img {
+	width: 70%;
+	height: 70%;
+}
+.copyright {
+	text-align: center;
+	line-height: 100px;
+}
+.copyright > div { vertical-align: middle; }
+
+.footer-social-media {
+	margin-left: 40%;
+	margin-top: 10%;
+}
+
+.footer-social-media > a > img {
+	width: 32px;
+	height: 32px;
 }
