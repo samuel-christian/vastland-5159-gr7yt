@@ -1,26 +1,74 @@
 /**Samuel Christian**/
 /**20 August 2015**/
-body { overflow-x: hidden; }
+@font-face {
+	font-family: 'Chunkfive';
+	src: url(../fonts/Chunkfive.otf);
+}
+@font-face {
+	font-family: 'Nobile Regular';
+	src: url(../fonts/Nobile-Regular.ttf);
+}
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: 'Open Sans Regular';
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: 'Roboto Condensed Light';
+	src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+	font-family: 'Roboto Condensed Regular';
+	src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+body {
+	overflow-x: hidden;
+}
 .header {
 	padding-top: 10px;
 	background: #f7f7f7;
 	border-bottom: 1px solid #c7c7c7;
+	padding: 5px 0px;
 }
 
-/*.header-container {
-	background: #f8f8f8;
-	border: 1px solid #e7e7e7;
-	border-radius: 2px;
-}*/
+.body-container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.carousel-container {
+	background: #FFFFC6;
+}
 
 .mycarousel {
-	width: 75%;
-	max-height: 400px !important;
-	margin: 20px auto;
+	max-height: 500px !important;
+	margin: 0px auto;
 }
 .carousel-inner > .item > img {
 	width: 100%;
-	max-height: 400px !important;
+	max-height: 500px !important;
+}
+.carousel-caption {
+	top: 20%;
+	right: 30%;
+	left: 10%;
+	z-index: 0;
+	font-family: 'Roboto Condensed Light';
+	text-align: left;
+	text-shadow: 1px 2px #000;
+	width: 40%;
+}
+.carousel-caption-title {
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+.carousel-caption-content {
+	letter-spacing: 2px;
+	font-size: 25px;
 }
 
 .logo-text {
@@ -83,29 +131,102 @@ body { overflow-x: hidden; }
 .btn-accounts { width: 100%; }
 
 .fav-item-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #eaeaea;
+}
+.fav-item-container > div {
 	width: 90%;
-	margin: 0px auto;
 }
 .line-through {
-	border-top: 1px solid #ccc;
-	margin: 20px 0px;
+	border-top: 2px solid #aaa;
+	margin-bottom: 50px;
 	position: relative;
 }
 .line-through p {
 	border-top: 1px solid #ddd;
-	top: -13px;
+	top: -23px;
 	position: absolute;
 	text-align: center;
 	width: 100%;
 	border: none;
 }
-.fav-item-title {
+.fav-item-container-title {
 	background: #fff;
 	font-weight: bold;
-	padding: 0px 10px;
-	font-size: 14px;
+	padding: 0px 30px;
+	font-size: 30px;
 	color: #606060;
+	font-family: 'Open Sans Light';
+	background: #eaeaea;
 }
+.fav-item > * {
+	text-decoration: none;
+	color: #505050;
+	font-family: 'Roboto Condensed Light';
+}
+.fav-item {
+	display: block;
+	width: 286px;
+	height: auto;
+	margin-left: 10%;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	background: #fff;
+}
+.fav-item > a > img {
+	width: 284px;
+	height: 165px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+}
+.fav-item > a:hover { text-decoration: none; }
+.fav-item-text {
+	margin: 10px auto;
+	padding-bottom: 10px;
+	width: 90%;
+	border-bottom: 1px solid #bbb;
+}
+.fav-item-title {
+	text-align: left;
+	font-size: 16px;
+	margin-left: 10px;
+	width: 120px;
+}
+.fav-item-price {
+	font-size: 16px;
+	text-align: right;
+	margin-right: 10px;
+	display: block;
+	margin-top: 10px;
+}
+.fav-item-controls {
+	margin: 10px auto;
+	width: 90%;
+}
+.fav-controls-order {
+	font-size: 16px;
+}
+.fav-item-controls > a {
+	color: #505050;
+	display: block;
+	padding: 10px 0px;
+}
+.fav-controls-order > * {
+	display: block;
+	margin: 10px auto;
+	width: 100px;
+	text-align: center;
+}
+.fav-item-controls > a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #3333CC;
+	border-radius: 3px;
+	transition: all 0.5s ease;
+}
+.glyphicon-order{ font-size: 40px; }
 
 .register-form-wrapper {
 	border: 1px solid #d7d7d7;
@@ -127,6 +248,31 @@ body { overflow-x: hidden; }
   padding: 10px 0px;
 }
 .form-actions > button { width: 70%; }
+
+.benefits-container {
+	width: 90%;
+	margin: 20px 0px 50px 4%;
+}
+.benefits-item {
+	font-family: 'Open Sans Light';
+	margin-left: 5%;
+	margin-top: 50px;
+}
+.benefits-item > * { display: block; }
+.benefits-item > img { margin: 0px auto; }
+.benefits-text { margin: 0px auto; }
+.benefits-text > * { display: block; }
+.benefits-title {
+	text-align: center;
+	font-weight: bold;
+	color: #505050;
+	font-size: 24px;
+	margin: 10px 0px;
+}
+.benefits-content {
+	font-size: 15px;
+	text-align: center;
+}
 
 .footer { 
 	border: 1px solid #c7c7c7;
