@@ -25,9 +25,8 @@
 	src: url(../fonts/RobotoCondensed-Regular.ttf);
 }
 
-body {
-	overflow-x: hidden;
-}
+body { overflow-x: hidden; }
+textarea { resize: none; }
 .header {
 	padding-top: 10px;
 	background: #f7f7f7;
@@ -298,4 +297,91 @@ body {
 .footer-social-media > a > img {
 	width: 32px;
 	height: 32px;
+}
+
+.product-container { margin: 50px auto; }
+.product-container > div {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 20px 40px 0px;
+	background: #FFFFE0;
+}
+.product-title {
+	font-family: 'Open Sans Light';
+	font-size: 40px;
+	display: block;
+	padding: 20px 10px 30px;
+}
+.product-title > a { text-decoration: none; }
+.product-title > a:hover { color: #337AB7; }
+.product-image { display: block; }
+.product-image > img {
+	display: block;
+	padding: 10px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	background: #fff;
+}
+.product-description, .product-price-details {
+	padding-left: 30px;
+	font-family: 'Open Sans Light';
+	font-size: 14px;
+	text-align: justify;
+	display: block;
+}
+.product-price-details {
+	font-size: 28px;
+	margin: 15px 0px 10px 0px;
+	color: #00CF00;
+	display: block;
+}
+.last-price-update {
+	display: block;
+	font-family: 'Roboto Condensed Light';
+	font-size: 12px;
+	float: right;
+}
+.product-controls {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	width: 340px;
+	background: #fff;
+}
+.btn-actions {
+	display: block;
+	margin: 20px auto;
+	width: 250px;
+	height: 40px;
+}
+.product-review {
+	margin: 20px auto;
+}
+.product-review > textarea { font-family: 'Open Sans Light'; }
+.product-review > button { margin: 20px auto; }
+
+.review {
+	border: 1px solid #ccc;
+	background: #fff;
+	font-family: 'Open Sans Light';
+	font-size: 14px;
+	margin: 15px auto;
+	border-radius: 3px;
+}
+.review-name {
+	font-family: 'Open Sans Regular';
+	font-size: 20px;
+	display: block;
+}
+.review-name > a { text-decoration: none; }
+.review-rating {
+	color: yellow;
+	line-height: 30px;
+	display: block;
+}
+.review-info-container { margin: 10px auto; }
+.review-content-container { margin: 15px auto; }
+.review-time {
+	float: right;
+	margin-right: 15%;
 }
