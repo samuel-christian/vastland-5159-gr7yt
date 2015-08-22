@@ -241,10 +241,10 @@ textarea { resize: none; }
 	color: #909090;
 }
 .form-actions {
-  margin: 0;
-  background-color: transparent;
-  text-align: center;
-  padding: 10px 0px;
+	margin: 0;
+	background-color: transparent;
+	text-align: center;
+	padding: 10px 0px;
 }
 .form-actions > button { width: 70%; }
 
@@ -384,4 +384,58 @@ textarea { resize: none; }
 .review-time {
 	float: right;
 	margin-right: 15%;
+}
+.profile-label{
+	text-align: left;
+	padding-top: 7px;
+	margin-bottom: 0px;
+}
+.cuadro_intro_hover{
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+	widht:100%;
+	border-radius: 50%
+}
+.cuadro_intro_hover:hover .caption{
+	opacity: 1;
+	transform: translateY(-150px);
+	-webkit-transform:translateY(-150px);
+	-moz-transform:translateY(-150px);
+	-ms-transform:translateY(-150px);
+	-o-transform:translateY(-150px);
+}
+.cuadro_intro_hover img{
+	z-index: 4;
+}
+.cuadro_intro_hover .caption{
+	position: absolute;
+	top:150px;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	width: 100%;
+}
+.cuadro_intro_hover .blur{
+	background-color: rgba(0,0,0,0.7);
+	height: 100px;
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	top: 100px;
+}
+.cuadro_intro_hover .caption-text{
+	z-index: 10;
+	color: #fff;
+	position: absolute;
+	height: 300px;
+	text-align: center;
+	top:100px;
+	width: 100%;
+	text-decoration: none;
+}
+.food-about{
+	margin:20px;
 }

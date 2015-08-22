@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Bikin Kenyang - Profile</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+            <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+            <script>
+                jQuery(document).ready(function ($) {
+                    var options = {
+                        ..
+                    };
+                    
+                    $("#slider1_container").css("display", "block");
+                    var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+                    ...
+                });
+            </script>
+        </head>
+        <body>
+            <div class="main-container">
+                <div class="header">
+                    <div class="container-fluid header-container">
+                        <div class="row">
+                            <div class="col-md-3 logo-area">
+                                <img class="logo-text" src="../images/logo-text.png">
+                            </div>
+                            <div class="col-md-6 text-center nav-area">
+                                <div class="navigation-bar">
+                                    <div class="container">
+                                        <div class="row pull-center">
+                                            <div class="col-md-1 nav-item"><a href="index.html">Home</a></div>
+                                            <div class="col-md-1 nav-item"><a href="#">Menu</a></div>
+                                            <div class="col-md-1 nav-item"><a href="about.html">About</a></div>
+                                            <div class="col-md-1 nav-item last-nav-item"><a href="#">Contact</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container">
+                                    <div class="row login-area">
+                                        <div class="col-md-1 login-item"><a href="daftar.html">Daftar</a></div>
+                                        <div class="col-md-1 login-item last-login-item">
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                    Masuk 
+                                                    <span class="caret">
+
+                                                    </span>
+                                                </a>
+                                                <ul class="dropdown-menu signin-form">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" id="input-email" placeholder="Email"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control" id="input-password" placeholder="Password"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit" class="btn btn-primary btn-accounts">
+                                                                Sign In
+                                                            </button>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <a href="#" class="btn btn-danger btn-accounts">
+                                                                Forgot Password?
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="container">
+                        <div class="row profile">
+                          <h3>Profiles
+                              <span class="pull-right profiles">
+                                  <a href="editprofile.html" caption="edit this profile"><i class="glyphicon glyphicon-edit"></i>
+                                  </a>
+                              </span>
+                          </h3>
+                          <hr>
+                          <div class="col-md-3">
+                            <div class="profile-sidebar">
+                                <div class="profile-userpic">
+                                    <div class="cuadro_intro_hover " style="">
+                                        <img src="../images/pp.png" alt=""class="img-circle" width="100%">
+                                        <div class="caption">
+                                            <div class="blur"></div>
+                                            <div class="caption-text">
+                                                <h3 style="color:solid white; padding:10px;">Edit Photo</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>              
+                                <div class="profile-usermenu">
+                                    <ul class="nav">  
+                                        <hr>                  
+                                        <li>
+                                            <a href="#">
+                                                <i class="glyphicon glyphicon-user"></i>Personal Info 
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a href="changepassword.html" target="_blank">
+                                                <i class="glyphicon glyphicon-lock"></i> Change Password 
+                                            </a>
+                                        </li>
+                                        <hr>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="profile-content">
+                            <div class="register-form-wrapper">
+                                <form class="form-horizontal register-form">
+                                    <div class="text-center register-intro">
+                                        <h3>Personal Info</h3>
+                                        <hr>
+                                        <div class="form-group control-group">
+                                            <label class="profile-label col-sm-3 ">Nama</label>
+                                            <div class="controls col-sm-9">Kevin Theophilus</div>
+                                        </div>
+                                        <div class="form-group control-group">
+                                            <label class="profile-label col-sm-3">Email</label>
+                                            <div class="controls col-sm-9">cobacoba@gmail.com</div>
+                                        </div>
+                                        <div class="form-group control-group">
+                                            <label class="profile-label col-sm-3">Jenis Kelamin</label>
+                                            <div class="controls col-sm-9">Laki-laki</div>
+                                        </div>
+                                        <div class="form-group control-group">
+                                            <label class="profile-label col-sm-3">Tanggal Lahir</label>
+                                            <div class="controls col-sm-9">01/12/1993</div>
+                                        </div>
+                                        <div class="form-group control-group">
+                                            <label class="profile-label col-sm-3">No Handphone</label>
+                                            <div class="controls col-sm-9">08122009xxxx</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-md-4"><div class="footer-logo"><img src="../images/logo-resize.png"></div></div>
+                <div class="col-md-4 text-center copyright"><div>Copyright &copy; BikinKenyang 2015</div></div>
+                <div class="col-md-4">
+                    <div class="footer-social-media">
+                        <a href="#" target="_blank"><img src="../images/pinterest.png" border="0" title="Pinterest" alt="Pinterest Icon"/></a>
+                        <a href="#" target="_blank"><img src="../images/twitter.png" border="0" title="Twitter" alt="Twitter Icon" /></a>
+                        <a href="#" target="_blank"><img src="../images/facebook.png" border="0" title="Facebook" alt="Facebook Icon" /></a>
+                        <a href="#" target="_blank"><img src="../images/instagram.png" border="0" title="Instagram" alt="Instagram Icon" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
