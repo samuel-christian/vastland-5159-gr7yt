@@ -439,3 +439,74 @@ textarea { resize: none; }
 .food-about{
 	margin:20px;
 }
+
+.menu-container {
+	margin: 20px auto;
+}
+.food-menu-title {
+	font-family: 'Open Sans Light';
+	margin-bottom: 50px;
+	border-bottom: 1px solid #aaa;
+}
+.food-container {
+	border: 1px solid #aaa;
+	padding: 0px;
+	width: 286px;
+	border-radius: 3px;
+	margin-left: 8%;
+	margin-bottom: 50px;
+}
+.food-container > a:hover { text-decoration: none; }
+.food-image { position: relative; }
+.food-image > img {
+	width: 284px;
+	height: 165px;
+	border-bottom: 1px solid #aaa;
+}
+.food-image > span {
+	position: absolute;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	padding: 10px 20px;
+	z-index: 9999;
+	background: #337AB7;
+	color: #fff;
+	letter-spacing: 1px;
+	font-family: 'Roboto Condensed Light';
+	border-radius: 2px;
+}
+.food-image > span:hover { text-decoration: none; }
+.food-text > * { display: block; }
+.food-text {
+	font-family: 'Roboto Condensed Light';
+	font-size: 16px;
+	padding: 10px 10px 40px;
+	border-bottom: 1px solid #bbb;
+	margin: 10px;
+}
+.food-price {
+	float: right;
+	padding-bottom: 10px;
+}
+.food-review > * {
+	text-decoration: none;
+	color: #505050;
+	margin: 10px;
+	padding: 0px 10px;
+	display: inline-block;
+}
+.food-review-count {
+	float: right;
+	font-family: 'Roboto Condensed Light';
+	font-size: 15px;
+}
+.food-controls {
+	margin: 10px;
+	padding: 0px 10px;
+}
+.btn-food-controls {
+	display: block;
+	width: 240px;
+	margin: 0px auto;
+}
